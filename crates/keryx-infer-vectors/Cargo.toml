@@ -1,0 +1,14 @@
+[package]
+name = "keryx-infer-vectors"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Published compatibility-class vectors for the Keryx inference engine"
+
+[dependencies]
+keryx-infer-protocol = { path = "../keryx-infer-protocol" }
+hex.workspace = true
+serde.workspace = true
+serde_json.workspace = true

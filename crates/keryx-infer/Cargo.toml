@@ -1,0 +1,15 @@
+[package]
+name = "keryx-infer"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Safe Rust SDK for the Keryx inference engine and compatibility class"
+
+[dependencies]
+keryx-infer-protocol = { path = "../keryx-infer-protocol" }
+keryx-infer-sys = { path = "../keryx-infer-sys" }
+blake3.workspace = true
+hex.workspace = true
+libloading.workspace = true

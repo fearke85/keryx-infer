@@ -1,0 +1,71 @@
+{
+  "protocol": 2,
+  "engine_abi": 9,
+  "trace_layout": "h15-v1",
+  "prompt_template": "h15-v1",
+  "tier_leaf_counts": "h15-v1",
+  "backends": {
+    "cuda": {
+      "status": "validated",
+      "vendor": "nvidia",
+      "unit_kind": "sm",
+      "plan": {
+        "cc7.5": 72,
+        "cc8.0": 108,
+        "cc8.6": 84,
+        "cc8.9": 128,
+        "cc12.0": 170
+      },
+      "arithmetic": {
+        "llama": "b10015",
+        "plan": "h15-planned-units-v1",
+        "mmq": "whole_tile",
+        "gemm": "keryx_f32_fixed_order",
+        "vendor_products": "0",
+        "softplus": "log1p_exp",
+        "recur_out": "f16_round",
+        "attn": "h15-cuda-v1",
+        "rope": "f64_angle",
+        "lse": "h15-cuda-v1"
+      }
+    },
+    "vulkan": {
+      "status": "pending",
+      "vendor": "amd",
+      "unit_kind": "cu",
+      "plan": {
+        "gfx906": 60,
+        "gfx1030": 80,
+        "gfx1031": 40,
+        "gfx1032": 32,
+        "gfx1100": 96,
+        "gfx1101": 60,
+        "gfx1102": 32,
+        "gfx1200": 64,
+        "gfx1201": 32
+      },
+      "arithmetic": {
+        "dispatch": "fixed_workgroups",
+        "plan": "h15-planned-units-v1",
+        "shader_arith": "h15-vk-v1",
+        "trace_capture": "h15-vk-v1",
+        "driver_policy": "cross-driver-requires-validation"
+      }
+    },
+    "sycl": {
+      "status": "planned",
+      "plan": {},
+      "arithmetic": {}
+    },
+    "metal": {
+      "status": "planned",
+      "plan": {},
+      "arithmetic": {}
+    },
+    "cpu": {
+      "status": "planned",
+      "plan": {},
+      "arithmetic": {}
+    }
+  }
+}

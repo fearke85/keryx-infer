@@ -1,0 +1,13 @@
+[package]
+name = "keryx-infer-conformance"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Compatibility-class inspector and conformance runner for the Keryx inference engine"
+
+[dependencies]
+keryx-infer-protocol = { path = "../keryx-infer-protocol" }
+keryx-infer-vectors = { path = "../keryx-infer-vectors" }
+hex.workspace = true

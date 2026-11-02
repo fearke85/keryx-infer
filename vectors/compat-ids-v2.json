@@ -1,0 +1,90 @@
+{
+  "protocol": 2,
+  "engine_abi": 9,
+  "vectors": [
+    {
+      "name": "cuda-turing-single",
+      "patch_set": "7d52df9e5181a3c5d2445cf02ae89489217a5a6c495fbb98e0ece86586d0774b",
+      "cards": [{ "backend": "cuda", "vendor": "nvidia", "arch": "cc7.5", "planned_units": 72, "unit_kind": "sm" }],
+      "compat_id": "558abf62a46b7e08a32fb82586dbda296025c354523c0b4002e93ed13e3130b8"
+    },
+    {
+      "name": "cuda-ga100-single",
+      "patch_set": "7d52df9e5181a3c5d2445cf02ae89489217a5a6c495fbb98e0ece86586d0774b",
+      "cards": [{ "backend": "cuda", "vendor": "nvidia", "arch": "cc8.0", "planned_units": 108, "unit_kind": "sm" }],
+      "compat_id": "8b83446740183864d7d994298707b170d05f68018ab59d749d7bb1e49e51ff85"
+    },
+    {
+      "name": "cuda-ampere-consumer-single",
+      "patch_set": "7d52df9e5181a3c5d2445cf02ae89489217a5a6c495fbb98e0ece86586d0774b",
+      "cards": [{ "backend": "cuda", "vendor": "nvidia", "arch": "cc8.6", "planned_units": 84, "unit_kind": "sm" }],
+      "compat_id": "0e695301f7d26435ae92729c8cc93fa12c0986bb39ccb35cd503cd6db1bc6b3e"
+    },
+    {
+      "name": "cuda-ada-single",
+      "patch_set": "7d52df9e5181a3c5d2445cf02ae89489217a5a6c495fbb98e0ece86586d0774b",
+      "cards": [{ "backend": "cuda", "vendor": "nvidia", "arch": "cc8.9", "planned_units": 128, "unit_kind": "sm" }],
+      "compat_id": "d8a1159366949f294ea1ad940d32b081da05336cd501574ca74a0e81cab0bd40"
+    },
+    {
+      "name": "cuda-blackwell-single",
+      "patch_set": "7d52df9e5181a3c5d2445cf02ae89489217a5a6c495fbb98e0ece86586d0774b",
+      "cards": [{ "backend": "cuda", "vendor": "nvidia", "arch": "cc12.0", "planned_units": 170, "unit_kind": "sm" }],
+      "compat_id": "d031c3991feae2ebe938e55db8872d441f0ed0a3d3ba922c80ab7b48b755ca84"
+    },
+    {
+      "name": "vulkan-vega20-single",
+      "patch_set": "7819d8ffa9970fc62166353f72018b40968bd3d2b68b870448da1ffc5db74a7a",
+      "cards": [{ "backend": "vulkan", "vendor": "amd", "arch": "gfx906", "planned_units": 60, "unit_kind": "cu" }],
+      "compat_id": "efe52cc2835882851a469476a1c583ddc87865e9b2ff5da406c0398a8e653f25"
+    },
+    {
+      "name": "vulkan-rdna2-navi21-single",
+      "patch_set": "7819d8ffa9970fc62166353f72018b40968bd3d2b68b870448da1ffc5db74a7a",
+      "cards": [{ "backend": "vulkan", "vendor": "amd", "arch": "gfx1030", "planned_units": 80, "unit_kind": "cu" }],
+      "compat_id": "ee5a2476a6587e01809c6f81d5c7c045bb1d1a90d724d35d777d72b01cfaf53e"
+    },
+    {
+      "name": "vulkan-rdna2-navi22-single",
+      "patch_set": "7819d8ffa9970fc62166353f72018b40968bd3d2b68b870448da1ffc5db74a7a",
+      "cards": [{ "backend": "vulkan", "vendor": "amd", "arch": "gfx1031", "planned_units": 40, "unit_kind": "cu" }],
+      "compat_id": "be5352c694c482a8524270ecec23740aa2ccabd89ed8433187ee33ceca81e78d"
+    },
+    {
+      "name": "vulkan-rdna2-navi23-single",
+      "patch_set": "7819d8ffa9970fc62166353f72018b40968bd3d2b68b870448da1ffc5db74a7a",
+      "cards": [{ "backend": "vulkan", "vendor": "amd", "arch": "gfx1032", "planned_units": 32, "unit_kind": "cu" }],
+      "compat_id": "e02e24f904e29f8050c06e665a847685e841f2530247f966b85af7e937eebf5a"
+    },
+    {
+      "name": "vulkan-rdna3-navi31-single",
+      "patch_set": "7819d8ffa9970fc62166353f72018b40968bd3d2b68b870448da1ffc5db74a7a",
+      "cards": [{ "backend": "vulkan", "vendor": "amd", "arch": "gfx1100", "planned_units": 96, "unit_kind": "cu" }],
+      "compat_id": "ac3edc3cdb389a0d97bb1a4f4bc4ab80603bc4eed967712ad2991f7099ded582"
+    },
+    {
+      "name": "vulkan-rdna3-navi32-single",
+      "patch_set": "7819d8ffa9970fc62166353f72018b40968bd3d2b68b870448da1ffc5db74a7a",
+      "cards": [{ "backend": "vulkan", "vendor": "amd", "arch": "gfx1101", "planned_units": 60, "unit_kind": "cu" }],
+      "compat_id": "610fb33c6c4890ca76522b09f2745f9c3ef8c2da8c49860c706cfd8b959ac550"
+    },
+    {
+      "name": "vulkan-rdna3-navi33-single",
+      "patch_set": "7819d8ffa9970fc62166353f72018b40968bd3d2b68b870448da1ffc5db74a7a",
+      "cards": [{ "backend": "vulkan", "vendor": "amd", "arch": "gfx1102", "planned_units": 32, "unit_kind": "cu" }],
+      "compat_id": "d4e978f0ab5b4747163ffc25c0bd19a72dff1450b811245919afc7571c8592ef"
+    },
+    {
+      "name": "vulkan-rdna4-navi48-single",
+      "patch_set": "7819d8ffa9970fc62166353f72018b40968bd3d2b68b870448da1ffc5db74a7a",
+      "cards": [{ "backend": "vulkan", "vendor": "amd", "arch": "gfx1200", "planned_units": 64, "unit_kind": "cu" }],
+      "compat_id": "2b352f1abe7694fa8b5f80ef45b94e2c1098dcb2c98e9d379aa296272e83b355"
+    },
+    {
+      "name": "vulkan-rdna4-navi44-single",
+      "patch_set": "7819d8ffa9970fc62166353f72018b40968bd3d2b68b870448da1ffc5db74a7a",
+      "cards": [{ "backend": "vulkan", "vendor": "amd", "arch": "gfx1201", "planned_units": 32, "unit_kind": "cu" }],
+      "compat_id": "05e4a565e8bd02806a4717915ca3d9394ab2b5b1f32a1ad0d6c28ecd35e4e9c3"
+    }
+  ]
+}

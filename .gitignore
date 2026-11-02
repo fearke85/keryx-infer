@@ -1,0 +1,10 @@
+/target
+**/*.rs.bk
+*.so
+*.dylib
+*.dll
+*.pdb
+native/build/out/
+native/build/cache/
+vectors/.generated/
+.DS_Store
